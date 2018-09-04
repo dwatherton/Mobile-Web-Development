@@ -1,0 +1,755 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Start Author's custom styles
+   ========================================================================== */
+
+/*******STANDARD FIXES********/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+/*******TYPOGRAPHY*******/
+
+html {
+	font-family: 'Lato', sans-serif;
+}
+
+/*******FLUID IMAGES*******/
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid black;
+}
+
+/*******DESIGN TIME STYLES********/
+
+/*MOBILE FIRST DESIGN!*/
+
+.container {
+	max-width: 480px;
+	height: auto;
+	margin: 0% auto;
+}
+
+/*******GLOBAL STYLES********/
+
+body {
+	line-height: 1.5;
+	background-color: #CECECE;
+	color: black;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: black;
+}
+
+header.container {
+	border: 1px solid black;
+	border-bottom: none;
+}
+
+nav {
+	display: flex;
+	background: #A9A9A9;
+	/*  padding: 20px 20px 0 20px;  Pad the nav bar 20px.  */
+}
+
+.container nav a {
+	font-size: 1.2em;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+	padding: 5px 2px;
+	border: .1em solid grey;
+	/*The CSS below sets up my background gradient and border for when I hover*/
+	background-image: linear-gradient(#CECECE, white), linear-gradient(darkgrey, black, black, black, black);
+	background-size: 0 3px, auto;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	transition: all .25s ease-in-out;
+	color: white;
+}
+
+.container nav a:hover {
+	/*The CSS below blows my background up to display my underline*/
+	background-size: 100% 3px, auto;
+}
+
+main.container {
+	font-size: 100%;
+	margin-top: 0;
+	border: 1px solid black;
+	border-top: none;
+	padding: 5px 25px;
+	background-color: #A9A9A9;
+}
+
+h1 {
+	font-family: 'Yellowtail', cursive;
+	font-size: 3.3em;
+	font-weight: 100;
+	text-align: center;
+	line-height: 1.2;
+	margin: 10px 0 -10px 0;
+}
+
+h2 {
+	font-size: 22pt;
+	text-decoration: underline;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#about p {
+	font-style: italic;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: 7em 1fr;
+	grid-template-rows: auto;
+	margin-top: 25px;
+}
+
+dt,
+dd {
+	font-weight: 600;
+	border-bottom: 1px outset grey;
+	padding: 5px;
+}
+
+dd {
+	font-weight: 100;
+	margin: 0;
+}
+
+.related-links {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	padding-right: 10%;
+	list-style: none;
+}
+
+.fa-github-square {
+	font-size: 2.5em;
+	color: black;
+}
+
+.fa-github-square:hover {
+	color: lightslategray;
+	animation: bounce 0.5s;
+}
+
+.fa-linkedin {
+	font-size: 2.5em;
+	color: black;
+}
+
+.fa-linkedin:hover {
+	color: lightslategray;
+	animation: bounce 0.5s;
+}
+
+.fa-file-pdf {
+	font-size: 2.25em;
+	margin-top: 1px;
+	color: black;
+}
+
+.fa-file-pdf:hover {
+	color: lightslategray;
+	animation: bounce 0.5s;
+}
+
+#skills,
+#experience,
+#education {
+	border-top: 1px inset grey;
+	margin-bottom: 25px;
+}
+
+#skills ul {
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 55px;
+	list-style: square;
+}
+
+#experience h2 {
+	margin-bottom: -15px;
+}
+
+.job {
+	margin-bottom: 30px;
+}
+
+/*Display all of the span's under experience and education matching the itemprop's below as a block level element.*/
+
+.job *[itemprop="jobTitle"],
+.job *[itemprop="name"],
+.job *[itemprop="url"],
+.job *[itemprop="addressLocality"],
+.certificate *[itemprop="name"] {
+	display: block;
+}
+
+.job h3 {
+	margin-top: 35px;
+	margin-bottom: 5px;
+}
+
+.certificate {
+	margin-bottom: 25px;
+}
+
+.certificate h3 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+footer.container {
+	font-size: 1em;
+	text-align: center;
+	margin: 15px auto;
+}
+
+footer.container span {
+	padding-left: 10px;
+}
+
+/********MEDIA QUERIES********/
+
+@media screen and (min-width: 725px) and (max-width: 900px) {
+
+	.container {
+		max-width: 725px;
+	}
+
+	#about {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-template-areas: "img details" "goal icons";
+		grid-gap: 25px;
+		margin-top: 20px;
+	}
+
+	img {
+		grid-area: img;
+		margin-top: 15px;
+	}
+
+	#about p {
+		grid-area: goal;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	dl {
+		grid-area: details;
+		margin-top: 15px;
+	}
+
+	.related-links {
+		grid-area: icons;
+		margin-top: 0;
+	}
+
+	#skills ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		list-style: square;
+		width: 100%;
+		padding-right: 35px;
+	}
+
+	#experience {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas: "h2 h2 h2 h2" "student student student student" "popeyes popeyes kmart kmart";
+		grid-gap: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	#experience h2 {
+		grid-area: h2;
+		margin-bottom: 0;
+	}
+
+	#experience h3 {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.student {
+		grid-area: student;
+		margin-bottom: -30px;
+		border: 1px dashed grey;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.job {
+		text-align: justify;
+		padding: 0 10px;
+	}
+
+	.student h3 {
+		margin-top: 15px;
+	}
+
+	.dates {
+		display: flex;
+		justify-content: center;
+	}
+
+	.student *[itemprop="name"],
+	.student *[itemprop="url"],
+	.student *[itemprop="address"] {
+		text-align: center;
+	}
+
+	.student p {
+		text-align: justify;
+	}
+
+	.popeyes {
+		grid-area: popeyes;
+	}
+
+	.kmart {
+		grid-area: kmart;
+	}
+
+	#education h2 {
+		grid-area: h2;
+		margin-bottom: 5px;
+	}
+
+	.degrees {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+
+
+@media screen and (min-width: 901px) {
+
+	.container {
+		max-width: 1000px;
+	}
+
+	#about {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-template-areas: "img details" "goal icons";
+		grid-gap: 25px;
+		margin-top: 20px;
+	}
+
+	img {
+		grid-area: img;
+		margin-top: 15px;
+	}
+
+	#about p {
+		grid-area: goal;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	dl {
+		grid-area: details;
+		margin-top: 10px;
+	}
+
+	dd,
+	dt {
+		padding-top: 20px;
+	}
+
+	.related-links {
+		grid-area: icons;
+		margin-top: 0;
+	}
+
+	#skills ul {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		list-style: square;
+		width: 100%;
+		padding-right: 25px;
+	}
+
+	#experience {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto);
+		grid-template-areas: "h2 h2 h2" "student popeyes kmart";
+		grid-gap: 25px;
+		margin-bottom: 0;
+	}
+
+	#experience h2 {
+		grid-area: h2;
+		margin-bottom: -35px;
+	}
+
+	.student {
+		grid-area: student;
+	}
+
+	.job {
+		text-align: justify;
+		padding: 0 10px;
+	}
+
+	#experience h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.popeyes {
+		grid-area: popeyes;
+	}
+
+	.kmart {
+		grid-area: kmart;
+	}
+
+	.degrees {
+		display: flex;
+		justify-content: space-around;
+		margin-top: -5px;
+	}
+}
+
+/********Added for icon bounce animations********/
+
+@keyframes bounce {
+	0%,
+	20%,
+	60%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+/*
+
+
+==========================================================================
+	End Author's custom styles
+	======================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+	display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+	/* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	-webkit-clip-path: none;
+	clip-path: none;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster:
+        http://www.sanbeiji.com/archives/953 */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

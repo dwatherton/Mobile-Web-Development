@@ -1,0 +1,125 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: black;
+}
+
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.35em;
+	text-align: center;
+	line-height: 1.35em;
+	background-color: #000;
+}
+
+#container {
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	border: .1em solid white;
+	border-top: none;
+	background-color: lightslategray;
+	color: black;
+}
+
+nav {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1.5%;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 0;
+}
+
+nav ul li {
+	display: block;
+	list-style: none;
+	overflow: hidden;
+	white-space: nowrap;
+	border: .1em solid white;
+	border-right: none;
+	background-color: black;
+}
+
+nav ul li.one {
+	border-left: none;
+}
+
+nav ul li a {
+	display: inline-block;
+	font-size: .85em;
+	font-weight: 800;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	color: white;
+}
+
+nav ul li a:hover {
+	background-color: grey;
+	color: white;
+}
+
+nav ul li a:visited {
+	color: white;
+}
+
+#content {
+	font-size: 100%;
+	width: auto;
+	height: auto;
+	margin-top: 2.5%;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+}
+
+#content h2 {
+	font-size: 1.7em;
+	margin-top: 1%;
+	margin-bottom: 3%;
+}
+
+#content ul {
+	margin-top: 2%;
+	padding-bottom: 5%;
+}
+
+#content ul li {
+	font-size: 1.25em;
+	list-style: none;
+	margin-top: 3%;
+}
+
+footer.primary {
+	clear: both;
+	text-align: center;
+	width: 100%;
+	height: 3.5%;
+	background-color: #000;
+	color: #FFF;
+}
+
+footer.primary h6 {
+	font-size: .6em;
+	border-top: .213em solid white;
+}
+
+footer.primary h6 a:hover {
+	background-color: grey;
+	color: black;
+}

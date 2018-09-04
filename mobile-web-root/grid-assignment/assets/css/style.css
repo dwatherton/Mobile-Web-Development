@@ -1,0 +1,91 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.cf {
+	zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+body,
+a {
+	color: white;
+	text-shadow: 1px 1px #000;
+	background-color: black;
+	/*I also made the background here black just from personal preference, I can remove this if need be.*/
+}
+
+.container {
+	width: 75%;
+	margin: 0.5% auto;
+	background-image: url(../img/grid.png);
+	background-size: 100%;
+	/*For the purpose of this assignment I made the grid background-image scaleable to show how I implemented the content layout; It also ties in nicely to the responsive design discussion we had. Note: you could also target the image with a class and use the max-width: 100% property to accomplish the same thing.*/
+}
+
+header[role="banner"],
+footer[role="contentinfo"] {
+	width: 93%;
+	margin: 0.5% auto;
+	color: white;
+	background-color: yellow;
+	clear: both;
+}
+
+#content {
+	float: left;
+	width: 45.7%;
+	margin-left: 3.52%;
+	margin-bottom: 1.5%;
+	color: white;
+	background-color: blue;
+}
+
+aside {
+	float: left;
+	width: 22.1%;
+	margin-left: 1.5%;
+	color: white;
+	background-color: red;
+}
+
+aside.widget_2 {
+	float: left;
+	width: 22.1%;
+	margin-left: 1.5%;
+	color: white;
+	background-color: green;
+}
+
+aside.widget_3 {
+	float: left;
+	width: 33.9%;
+	margin: 1.5% 0 1.5% 1.5%;
+	color: white;
+	background-color: purple;
+}
+
+aside.widget_4 {
+	float: left;
+	width: 10.39%;
+	margin: 1.5% 0 1.5% 1.5%;
+	color: white;
+	background-color: orange;
+}

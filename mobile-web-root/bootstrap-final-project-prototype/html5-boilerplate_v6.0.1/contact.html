@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Final Project Prototype</title>
+	<meta name="description" content="Final project prototype homepage using HTML5 Boilerplate and Bootstrap CDN">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	<!-- Add your site or application content here -->
+
+	<main class="container">
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="navbar-brand">Lake Oauchita State Park</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="index.html">About Us<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="camping.html">Camping</a>
+					<a class="nav-item nav-link" href="hiking.html">Hiking</a>
+					<a class="nav-item nav-link" href="boating.html">Boating</a>
+					<a class="nav-item nav-link active" href="contact.html">Contact Us</a>
+				</div>
+			</div>
+		</nav>
+
+		<section class="form">
+			<h3>Contact Us!</h3>
+			<div class="form-group row">
+				<label for="example-text-input" class="col-2 col-form-label">First Name: </label>
+				<div class="col-10">
+					<input class="form-control" type="text" placeholder="First Name" id="example-text-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-text-input" class="col-2 col-form-label">Last Name: </label>
+				<div class="col-10">
+					<input class="form-control" type="text" placeholder="Last Name" id="example-text-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-email-input" class="col-2 col-form-label">Email: </label>
+				<div class="col-10">
+					<input class="form-control" type="email" placeholder="Email Address" id="example-email-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-tel-input" class="col-2 col-form-label">Telephone: </label>
+				<div class="col-10">
+					<input class="form-control" type="tel" placeholder="Telephone Number" id="example-tel-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="example-datetime-local-input" class="col-2 col-form-label">Date and time: </label>
+				<div class="col-10">
+					<input class="form-control" type="datetime-local" placeholder="yyyy-mm-dd hh:mm:am" id="example-datetime-local-input">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="exampleFormControlTextarea1" class="col-2 col-form-label">Question or Concern: </label>
+				<div class="col-10">
+					<textarea class="form-control" id="exampleFormControlTextarea1 textareaChars" placeholder="Please provide your questions/concerns..." rows="13" maxlength="750"></textarea>
+					<span id="chars">750</span><span> Characters remaining</span>
+				</div>
+			</div>
+			<button class="button">Submit</button>
+		</section>
+
+
+		<footer class="clear">&copy; 2018, Daniel Atherton<a href="#top"><sup>Return to Top</sup></a></footer>
+
+	</main>
+
+
+	<!-- End your site or application content here -->
+
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

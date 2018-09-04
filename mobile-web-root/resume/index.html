@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Resume</title>
+	<meta name="description" content="Display the resume of Daniel Atherton, BSCS student at UALR, for potential job offers or internships.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<!--linked API's -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!--Google fonts API for the Lato, sans-serif, font family.-->
+	<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+	<!--Google fonts API for the Yellowtail font family.-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!--Font Awesome API for the icons on github, linkedin, and pdf resume.-->
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+						<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+				<![endif]-->
+
+
+
+
+
+	<!-- Add your site or application content here
+		============================================================
+		============================================================
+		-->
+
+	<header class="container">
+		<!-- Main navigation -->
+		<nav class="primary">
+			<a href="#about" title="About Me">About</a>
+			<a href="#skills" title="Skills">Skills</a>
+			<a href="#experience" title="Experience">Experience</a>
+			<a href="#education" title="Education">Education</a>
+		</nav>
+	</header>
+	<!-- Main -->
+	<main class="container" itemscope itemtype="http://schema.org/Person">
+		<h1>Daniel Atherton</h1>
+		<section id="about">
+			<h2 class="visuallyhidden">Personal details</h2>
+			<img itemprop="image" src="img/resume-pic.svg" title="Daniel Atherton" alt="Daniel Atherton">
+			<p itemprop="description">I would like to obtain a position as a full-time Web Developer.</p>
+			<dl>
+				<dt>Name:</dt>
+				<dd itemprop="name">
+					<span itemprop="givenName">Daniel</span> <span itemprop="familyName">Atherton</span>
+				</dd>
+				<dt>Date of birth:</dt>
+				<dd itemprop="birthDate"><time datetime="1995-09-11">09/11/1995</time></dd>
+				<dt>Nationality:</dt>
+				<dd itemprop="nationality">United States</dd>
+				<dt>Location:</dt>
+				<dd itemprop="homeLocation">Cabot, Arkansas</dd>
+				<dt>Telephone:</dt>
+				<dd>
+					<a itemprop="telephone" href="tel:501.605.3781" title="Call or Text">501-605-3781</a>
+				</dd>
+				<dt>Email:</dt>
+				<dd>
+					<a itemprop="email" href="mailto:Dwatherton@ualr.edu" title="Email">Dwatherton@ualr.edu</a>
+				</dd>
+				<dt>Address:</dt>
+				<dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="streetAddress">38 Crestwood Drive,</span>
+					<span itemprop="addressLocality">Cabot,</span>
+					<span itemprop="addressRegion">AR</span>
+					<span itemprop="postalCode">72023,</span>
+					<span itemprop="addressCountry">USA</span>
+				</dd>
+			</dl>
+			<ul class="related-links">
+				<li><a itemprop="url" rel="me" href="https://github.com/dwatherton" target="_blank" title="GitHub"><i class="fab fa-github-square"></i></a></li>
+				<li><a itemprop="url" rel="me" href="https://www.linkedin.com/in/daniel-atherton/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+				<li><a itemprop="url" href="/resume/resources/pdf-resume.pdf" download title="PDF Resume"><i class="fas fa-file-pdf"></i></a></li>
+				<!--Will add a PDF Resumé if requested by instructor. -->
+			</ul>
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<ul>
+				<li class="skill">HTML</li>
+				<li class="skill">CSS</li>
+				<li class="skill">Javascript</li>
+				<li class="skill">C++</li>
+				<li class="skill">MASM Assembly</li>
+			</ul>
+		</section>
+		<section id="experience">
+			<h2>Experience</h2>
+			<!-- current job -->
+			<div class="student">
+				<article class="job">
+					<h3 itemprop="jobTitle">Full Time Student</h3>
+					<div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+						<span itemprop="name">University of Arkansas Little Rock</span>
+						<span class="dates">(August 2017 - Present)</span>
+						<p itemprop="description">I am currently studying Computer Science with aspirations to become a full time Web Developer or Software Engineer. I am in the process of learning computer architecture, responsive web design, and c++ programing. My current academic goals are to
+							learn object oriented programing, and the Jquery Javascript library.</p>
+						<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+					<a itemprop="url" href="http://ualr.edu/" target="_blank" title="UALR Website">UALR.edu</a>
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<span itemprop="addressLocality"> 2801 South University Avenue, Little Rock, AR 72204</span>
+						</span>
+						</span>
+					</div>
+				</article>
+			</div>
+			<!-- Previous Jobs - Notice Slightly Different Format-->
+			<div class="popeyes">
+				<article class="job" itemscope itemtype="http://schema.org/Event/Job">
+					<h3 itemprop="name">Shift Supervisor</h3>
+					<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+					<span itemprop="name">Popeyes Chicken LLC.</span>
+					<a itemprop="url" href="https://popeyes.com/" target="_blank" title="Popeyes Website">Popeyes.com</a>
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">3131 South 2nd Street, Cabot, AR 72023</span>
+					</span>
+					</span>
+					<span itemprop="startDate" content="2014-02-14 T16:00">(February 2014 - </span>
+					<span itemprop="endDate" content="2015-03-09 T22:00">March 2015)</span>
+					<p itemprop="description">As Shift Supervisor at Popeyes, it was my responsibility to keep day-to-day operations running smoothly. I was in charge of directing fellow employess on what to do, and when to do it. It was also my responsibilty to take inventory and count money
+						at the end of each shift, and to get the deposit ready to be taken to the bank the next morning.</p>
+				</article>
+			</div>
+			<div class="kmart">
+				<article class="job" itemscope itemtype="http://schema.org/Event/Job">
+					<h3 itemprop="name">Stock Crew</h3>
+					<span itemprop="location" itemscope itemtype="http://schema.org/Place">
+					<span itemprop="name">Kmart</span>
+					<a itemprop="url" href="http://www.kmart.com/" target="_blank" title="Kmart Website">Kmart.com</a>
+					<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+						<span itemprop="addressLocality">89 Kmart Plaza, Cabot, AR 72023</span>
+					</span>
+					</span>
+					<span itemprop="startDate" content="2013-05-07 T14:00">(May 2013 - </span>
+					<span itemprop="endDate" content="2014-02-13 T22:00">February 2014)</span>
+					<p itemprop="description">As part of the Stock crew at Kmart, it was my responsibility to keep the shelves fully stocked in my department (Pantry). I was also in charge of coordinating displays and changing department layouts based on new products and distributor requests.
+						In my spare time, I also ejoyed helping to check out customers when the lines up front were crowded. </p>
+				</article>
+			</div>
+		</section>
+		<section id="education">
+			<h2>Education</h2>
+			<div class="degrees">
+				<div class="bs">
+					<article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+						<h3 itemprop="description"><abbr title="Bachellor of Science">BS </abbr>Computer Science</h3>
+						<span itemprop="name">University of Arkansas Little Rock</span>
+						<span itemprop="location" itemscope>Arkansas, USA</span>
+						<span>(2017 - Present)</span>
+					</article>
+				</div>
+				<div class="aa">
+					<article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+						<h3 itemprop="description"><abbr title="Associate of Arts">AA </abbr> Liberal Arts</h3>
+						<span itemprop="name">Arkansas State University Beebe</span>
+						<span itemprop="location" itemscope>Arkansas, USA</span>
+						<span>(2015 - 2017)</span>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<footer class="container">
+		<div id="copyright">
+			&copy; 2018 Daniel Atherton. <span><a href="#top" title="Return to the Top of the Page">Return to Top</a></span>
+		</div>
+	</footer>
+
+	<!-- End your site or application content here 
+		============================================================
+		============================================================
+		-->
+
+
+
+
+
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() { ga.q.push(arguments) };
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>

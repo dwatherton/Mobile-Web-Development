@@ -1,0 +1,153 @@
+/*The first rule in the stylesheet is a "Universal Selector" that is being used to reset all margins to 0 pixels.*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("../img/bg-tile.jpg");
+	background-repeat: repeat-x;
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #171717;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	background-color: #FFF;
+	margin-top: 20px;
+	border: 1px solid #CCC;
+}
+
+#header {
+	background-image: url("../img/header.jpeg");
+	width: 800px;
+	height: 140px;
+}
+
+#header h1 a {
+	display: block;
+	width: 800px;
+	height: 140px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#nav {
+	background-color: #060627;
+	border: 1px solid #FFF;
+}
+
+#nav ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+#nav ul li {
+	display: inline;
+	height: 35px;
+	line-height: 35px;
+}
+
+#nav ul li a {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+#nav ul li a:link,
+#nav ul li a:visited {
+	text-decoration: none;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: mediumpurple;
+	color: #FFF;
+}
+
+#nav ul li a:hover {
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+#content {
+	margin: 20px;
+}
+
+#content h2 {
+	color: darkgoldenrod;
+	background-color: black;
+	border: 2px solid dodgerblue;
+}
+
+#content h3 {
+	color: red;
+	background-color: black;
+	border: 2px solid darkgoldenrod;
+}
+
+#content h4 {
+	color: dodgerblue;
+	background-color: black;
+	border: 2px solid red;
+}
+
+#content dl {
+	display: block;
+	margin: 5px 20px 15px 20px;
+}
+
+#content dt {
+	font-style: italic;
+}
+
+#content dd {
+	margin-left: 25px;
+	font-weight: bold;
+}
+
+#content p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.alert {
+	background-color: #FCF859;
+	color: darkred;
+	margin-right: 250px;
+}
+
+#footer {
+	background-color: #000;
+	color: #FFF;
+	height: 35px;
+	text-align: center;
+}
+
+#footer h6 {
+	font-size: 12px;
+	line-height: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.link:hover {
+	background-color: aquamarine;
+}
+
+.img-right {
+	clear: both;
+	float: right;
+	border: 3px solid cyan;
+	margin: 35px 5px 35px 20px;
+	padding: 5px;
+	background-color: black;
+}

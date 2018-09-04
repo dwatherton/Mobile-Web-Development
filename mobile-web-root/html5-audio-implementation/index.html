@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>HTML5 Audio Implementation</title>
+	<meta name="description" content="An implementation of audio via HTML5s' native multimedia element.">
+	<meta name="author" content="Daniel Atherton">
+	<meta name="keywords" content="HTML, HTML5, audio, native, native audio, multimedia, HTML5 audio element">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+	<!-- Add your site or application content here -->
+
+	<main>
+		<audio controls="controls">
+  			<source src="audio/thunder.ogg" type="audio/ogg" /> <!-- Firefox, Opera, Chrome -->
+			<source src="audio/thunder.mp3" type="audio/mp3" /> <!-- Safari, Chrome, IE9+ -->
+  			<source src="audio/thunder.wav" type="audio/wav" /> <!-- Safari, Opera, IE9+, Firefox -->
+  				<object width="270" height="40" data="player.swf?soundFile=audio/thunder.mp3" id="audioplayer1" type="application/x-shockwave-flash">
+					<param value="player.swf?soundFile=audio/thunder.mp3" name="movie">
+					<param value="high" name="quality">
+					<param value="transparent" name="wmode">
+				</object>
+			  <a href="audio/thunder.mp3">Download the Audio</a>
+		</audio>
+	</main>
+
+
+	<section>
+		<p>The Audio method I used is the HTML5 Audio with Flash Fallback <a href="https://thomaswallace.net/demos/audio/example-2.html" title="HTML5 Audio with Flash Fallback Demo" target="_blank">Method</a>! This method supports Chrome, Firefox, Safari, Opera, and IE9+.</p>
+	</section>
+
+	<!-- End your site or application content here -->
+
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')
+
+	</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/audio-player.js"></script>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function() {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('send', 'pageview')
+
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
